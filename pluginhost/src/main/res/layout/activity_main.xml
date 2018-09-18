@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <Button
+        android:id="@+id/launcher_plugin_bt"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:onClick="launcherPlugin"
+        android:text="启动插件apk" />
+
+    <Button
+        android:id="@+id/launcher_plugin_point_activity_bt"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/launcher_plugin_bt"
+        android:onClick="launcherPluginPoint"
+        android:text="启动插件apk的特定Activity" />
+    <Button
+        android:id="@+id/launcher_plugin_point_service_bt"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/launcher_plugin_point_activity_bt"
+        android:onClick="launcherPluginService"
+        android:text="启动插件apk的特定Service" />
+    <TextView
+        android:id="@+id/tips_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/launcher_plugin_point_service_bt"
+        android:lineSpacingMultiplier="1.3"
+        android:padding="8dip"
+        android:textColor="#ff0000" />
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PluginSdkClient</string>
+    <string name="cantOpen">无法打开宿主的相应Activity</string>
+
+</resources>

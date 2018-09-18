@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <Button
+        android:id="@+id/send_broadcast_bt"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:text="发送广播->" />
+
+    <Button
+        android:id="@+id/start_service_bt"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:text="启动Service->" />
+
+    <Button
+        android:id="@+id/stop_service_bt"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:text="停止Service->" />
+    
+    <Button
+        android:id="@+id/bind_service_bt"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:text="Bind Service->" />
+
+    <Button
+        android:id="@+id/unBind_service_bt"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:text="unBind Service->" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </FrameLayout>
+
+</LinearLayout>

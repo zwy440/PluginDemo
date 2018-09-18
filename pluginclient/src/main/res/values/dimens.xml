@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Default -->
+    <dimen name="line_default">1dp</dimen>
+
+    <!-- Products -->
+    <dimen name="height_list">60dp</dimen>
+    <dimen name="size_list_image">45dp</dimen>
+    <dimen name="font_size_title">17sp</dimen>
+    <dimen name="font_size_description">15sp</dimen>
+    <dimen name="margin_setting">20dp</dimen>
+
+</resources>

@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/fragment_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:text="下面两个按钮是处于Fragment的布局中" />
+
+    <Button
+        android:id="@+id/launcher_proxy_activity_bt"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:text="点击跳转到宿主的SecondActivity" />
+
+    <Button
+        android:id="@+id/launcher_plugin1_activity_bt"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:text="第一种跳转插件ThirdActivity" />
+    <Button
+    android:id="@+id/launcher_plugin2_activity_bt"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:text="第二种跳转插件ThirdActivity" />
+    <Button
+        android:id="@+id/launcher_plugin3_activity_bt"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:text="第三种跳转插件ThirdActivity" />
+</LinearLayout>
