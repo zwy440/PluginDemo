@@ -140,8 +140,8 @@ public class TestFragment extends PluginFragment
             if(type == 1){
                 Intent i = new Intent();
                 i.setComponent(new ComponentName("com.example.pluginhost","com.zwy.ProxyActivity")); //第一种
-                  i.putExtra(PluginConstants.EXTRA_PLUGIN_APK_PATH, getApkPluginPath()); //第一种
-                 i.putExtra(PluginConstants.EXTRA_PLUGIN_CLASS, "com.example.pluginclient.ThirdActivity"); //第一种
+                  i.putExtra(PluginConstants.PLUGIN_APK_PATH, getApkPluginPath()); //第一种
+                 i.putExtra(PluginConstants.PLUGIN_CLASS, "com.example.pluginclient.ThirdActivity"); //第一种
                 mCotext.startActivity(i);  //第一种
             }else if(type == 2){
                 Intent i = new Intent(getActivity(),ThirdActivity.class);

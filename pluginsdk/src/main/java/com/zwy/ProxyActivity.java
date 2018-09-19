@@ -190,8 +190,8 @@ public class ProxyActivity extends FragmentActivity
         {
             return;
         }
-        mApkFilePath = i.getStringExtra(PluginConstants.EXTRA_PLUGIN_APK_PATH);
-        mClassName = i.getStringExtra(PluginConstants.EXTRA_PLUGIN_CLASS);
+        mApkFilePath = i.getStringExtra(PluginConstants.PLUGIN_APK_PATH);
+        mClassName = i.getStringExtra(PluginConstants.PLUGIN_CLASS);
         sApkPath = mApkFilePath;
     }
 
@@ -469,8 +469,8 @@ public class ProxyActivity extends FragmentActivity
     {
         Intent intent = new Intent(startIntent);
         intent.setClass(activity, getClass());
-        intent.putExtra(PluginConstants.EXTRA_PLUGIN_APK_PATH, apkPath);
-        intent.putExtra(PluginConstants.EXTRA_PLUGIN_CLASS, launchActivity);
+        intent.putExtra(PluginConstants.PLUGIN_APK_PATH, apkPath);
+        intent.putExtra(PluginConstants.PLUGIN_CLASS, launchActivity);
         activity.startActivityForResult(intent, requestCode);
     }
 
@@ -494,8 +494,8 @@ public class ProxyActivity extends FragmentActivity
         if (!TextUtils.isEmpty(names[0]) && !TextUtils.isEmpty(names[1]))
         {
             service.setClass(this, ProxyService.class);
-            service.putExtra(PluginConstants.EXTRA_PLUGIN_APK_PATH, names[0]);
-            service.putExtra(PluginConstants.EXTRA_PLUGIN_CLASS, names[1]);
+            service.putExtra(PluginConstants.PLUGIN_APK_PATH, names[0]);
+            service.putExtra(PluginConstants.PLUGIN_CLASS, names[1]);
             return startService(service);
         }
         return null;
@@ -539,8 +539,8 @@ public class ProxyActivity extends FragmentActivity
         if (!TextUtils.isEmpty(names[0]) && !TextUtils.isEmpty(names[1]))
         {
             service.setClass(this, ProxyService.class);
-            service.putExtra(PluginConstants.EXTRA_PLUGIN_APK_PATH, names[0]);
-            service.putExtra(PluginConstants.EXTRA_PLUGIN_CLASS, names[1]);
+            service.putExtra(PluginConstants.PLUGIN_APK_PATH, names[0]);
+            service.putExtra(PluginConstants.PLUGIN_CLASS, names[1]);
             return bindService(service, conn, flags);
         }
         return false;
@@ -563,7 +563,7 @@ public class ProxyActivity extends FragmentActivity
             {
                 className = componentName.getClassName();
             }
-            apkPath = i.getStringExtra(PluginConstants.EXTRA_PLUGIN_APK_PATH);
+            apkPath = i.getStringExtra(PluginConstants.PLUGIN_APK_PATH);
             if (TextUtils.isEmpty(apkPath) || "null".equals(apkPath))
             {
                 apkPath = mApkFilePath;

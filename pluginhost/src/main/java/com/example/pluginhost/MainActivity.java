@@ -150,8 +150,8 @@ public class MainActivity extends Activity
         }
 
         Intent i = new Intent(this, ProxyActivity.class);
-        i.putExtra(PluginConstants.EXTRA_PLUGIN_APK_PATH, apkPath);
-        i.putExtra(PluginConstants.EXTRA_PLUGIN_CLASS, activityName);
+        i.putExtra(PluginConstants.PLUGIN_APK_PATH, apkPath);
+        i.putExtra(PluginConstants.PLUGIN_CLASS, activityName);
         startActivity(i);
     }
     /**
@@ -171,8 +171,8 @@ public class MainActivity extends Activity
         }
 
         Intent i = new Intent(this, ProxyService.class);
-        i.putExtra(PluginConstants.EXTRA_PLUGIN_APK_PATH, apkPath);
-        i.putExtra(PluginConstants.EXTRA_PLUGIN_CLASS, serviceName);
+        i.putExtra(PluginConstants.PLUGIN_APK_PATH, apkPath);
+        i.putExtra(PluginConstants.PLUGIN_CLASS, serviceName);
         startService(i);
     }
 

@@ -116,8 +116,8 @@ public class ProxyService extends Service
         {
             return false;
         }
-        String launchService = intent.getStringExtra(PluginConstants.EXTRA_PLUGIN_CLASS);
-        String pluginApkFilePath = intent.getStringExtra(PluginConstants.EXTRA_PLUGIN_APK_PATH);
+        String launchService = intent.getStringExtra(PluginConstants.PLUGIN_CLASS);
+        String pluginApkFilePath = intent.getStringExtra(PluginConstants.PLUGIN_APK_PATH);
 
         // 如果插件Service的实例存在
         if (mPluginService != null)
