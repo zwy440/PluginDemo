@@ -1,2 +1,4 @@
 # PluginDemo
 ZWY
+三个module分别为插件宿主，插件，SDK
+APP_BUILD_TYPE用来控制插件apk的形式app为独立安装运行，plugin为插件形式
